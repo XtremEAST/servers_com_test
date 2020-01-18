@@ -1,0 +1,27 @@
+<section id="messages">
+  <div class="container pt-3">
+    <div class="row mb-3">
+      <div class="col">
+        <h1 class="text-center">Messages</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 offset-0 col-lg-8 offset-lg-2">
+        <div class="messages">
+          <div class="message mb-3" *ngFor="let message of messages;trackBy: trackByFn">
+            <app-message [message]="message" [currUserAuthor]="currUser.id === message.author.id"></app-message>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="new-message">
+  <div class="container fixed-bottom">
+    <div class="row">
+      <div class="col p-3">
+        <button class="btn btn-primary" (click)="openNewMessageModal()">New message</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">New message</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="newMessageForm">
+    <div class="form-group">
+      <textarea class="form-control" minlength="3" maxlength="256" formControlName="text"></textarea>
+    </div>
+  </form>
+  <p class="m-0" [ngClass]="{'text-danger': newMessageForm.invalid}">{{newMessageForm.value.text.length}}/256</p>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" [disabled]="newMessageForm.invalid" (click)="saveMessage()">Save</button>
+  <button type="button" class="btn btn-secondary" (click)="bsModalRef.hide()">Cancel</button>
+</div>

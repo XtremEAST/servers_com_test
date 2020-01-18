@@ -1,0 +1,16 @@
+:host {
+  .author-avatar {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .author-info {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+  }
+}

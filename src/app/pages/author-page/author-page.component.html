@@ -1,0 +1,38 @@
+<section id="author">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-outline-secondary border-0" (click)="goBack()">< Back to messages</button>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <h1 class="text-center">{{author.name}}</h1>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <div class="author-avatar">
+          <img [attr.src]="avatarUrl" alt="author's avatar" (error)="avatarUrl = defaultAvatarUrl">
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="author-info">
+          <div>
+            <p>Registered: {{author.registrationDate | date: 'd/M/yy H:mm'}}</p>
+            <p>Total Messages: {{messages.length}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 offset-0 col-lg-8 offset-lg-2">
+        <div class="author-messages">
+          <div class="message mb-3" *ngFor="let message of messages">
+            <app-author-message [message]="message"></app-author-message>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

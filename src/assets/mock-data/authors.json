@@ -1,0 +1,38 @@
+[
+  {
+    "id": 999,
+    "name": "Jolly Roger",
+    "registrationDate": "2020-01-18T14:12:45.379Z",
+    "avatarUrl": ""
+  },
+  {
+    "id": 1,
+    "name": "Валерий Паллыч",
+    "registrationDate": "2020-01-18T14:12:46.379Z",
+    "avatarUrl": ""
+  },
+  {
+    "id": 2,
+    "name": "Жена Валерия Паллыча",
+    "registrationDate": "2020-01-18T14:12:47.379Z",
+    "avatarUrl": ""
+  },
+  {
+    "id": 3,
+    "name": "Теща Валерия Паллыча",
+    "registrationDate": "2020-01-18T14:12:48.379Z",
+    "avatarUrl": ""
+  },
+  {
+    "id": 4,
+    "name": "Саня",
+    "registrationDate": "2020-01-18T14:12:49.379Z",
+    "avatarUrl": ""
+  },
+  {
+    "id": 5,
+    "name": "Спам",
+    "registrationDate": "2020-01-18T14:12:50.379Z",
+    "avatarUrl": ""
+  }
+]
